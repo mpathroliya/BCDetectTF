@@ -1,0 +1,2 @@
+rootProject.name='breastCancerDetectTF'
+include ':app'

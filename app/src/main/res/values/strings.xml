@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BCdetect TF</string>
+    <string name="detectButton">DETECT</string>
+    <string name="clearButton">CLEAR</string>
+    <string name="uploadButton">Select a Picture</string>
+    <string name="resultText" >placeHolder</string>
+    <string name="image_content">Uploaded image</string>
+    <string name="not_detected">Not detected</string>
+    <string name="found_digits">%1$s</string>
+</resources>

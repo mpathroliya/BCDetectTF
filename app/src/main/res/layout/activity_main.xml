@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="400dp"
+        android:layout_height="401dp"
+        android:contentDescription="@string/image_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/result_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="293dp"
+        android:layout_height="88dp"
+        android:inputType="number"
+        android:text="click upload to select a picture"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/choose_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+    <Button
+        android:id="@+id/choose_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="391dp"
+        android:layout_height="75dp"
+        android:text="@string/uploadButton"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/detect_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_text" />
+
+    <Button
+        android:id="@+id/detect_button"
+        android:layout_width="392dp"
+        android:layout_height="72dp"
+        android:text="@string/detectButton"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/clear_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_button" />
+
+    <Button
+        android:id="@+id/clear_button"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="371dp"
+        android:layout_height="73dp"
+        android:text="@string/clearButton"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detect_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
